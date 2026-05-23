@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven饮食红黑榜</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 32px;
+    }
+    .group {
+      margin-bottom: 28px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .group-title {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .group-s .group-title { background: #ffd70022; color: #ffd700; border: 1px solid #ffd70044; }
+    .group-a .group-title { background: #4ade8022; color: #4ade80; border: 1px solid #4ade8044; }
+    .group-b .group-title { background: #60a5fa22; color: #60a5fa; border: 1px solid #60a5fa44; }
+    .group-c .group-title { background: #f8717122; color: #f87171; border: 1px solid #f8717144; }
+    .card {
+      background: #161616;
+      border: 1px solid #222;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+    }
+    .card:last-child { margin-bottom: 0; }
+    .shop-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .shop-name .location {
+      font-size: 11px;
+      color: #555;
+      font-weight: 400;
+      margin-left: 6px;
+    }
+    .dishes {
+      font-size: 12px;
+      color: #888;
+      line-height: 1.8;
+    }
+    .dish-high { color: #4ade80; }
+    .dish-mid { color: #a0a0a0; }
+    .dish-low { color: #f87171; }
+    .meta {
+      font-size: 11px;
+      color: #444;
+      margin-top: 4px;
+    }
+    .note {
+      font-size: 11px;
+      color: #555;
+      font-style: italic;
+      margin-top: 2px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      margin: 24px 0;
+    }
+    .待打卡 {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .待打卡-title {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .待打卡-item {
+      font-size: 12px;
+      color: #666;
+      padding: 6px 0;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .legend {
+      max-width: 560px;
+      margin: 32px auto 0;
+      font-size: 10px;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h1>饮食红黑榜</h1>
+<div class="subtitle">评分：5=极力推荐 / 4=值得一试 / 3=无功无过 / 2=明显缺点 / 1=踩雷</div>
+
+<!-- S级 -->
+<div class="group group-s">
+  <div class="group-title">综合5星 · S级</div>
+
+  <div class="card">
+    <div class="shop-name">咏發顺德海鲜大排档<span class="location">莘庄维璟印象城</span></div>
+    <div class="dishes">
+      <span class="dish-high">水牛奶粥底火锅(5)</span> /
+      <span class="dish-high">龙趸鱼片(4)</span> /
+      <span class="dish-high">牛肉(4)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-05-02</div>
+  </div>
+</div>
+
+<!-- A级 -->
+<div class="group group-a">
+  <div class="group-title">综合4星 · A级</div>
+
+  <div class="card">
+    <div class="shop-name">濱寿司<span class="location">青浦万达茂</span></div>
+    <div class="dishes">
+      <span class="dish-high">三文鱼寿司(5)</span> /
+      <span class="dish-high">鳗鱼寿司(4)</span> /
+      <span class="dish-high">肥牛寿司(4)</span> /
+      <span class="dish-mid">鹅肝(2)</span> /
+      <span class="dish-low">松板肉(1)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-05-09</div>
+  </div>
+</div>
+
+<!-- B级 -->
+<div class="group group-b">
+  <div class="group-title">综合3星 · B级</div>
+
+  <div class="card">
+    <div class="shop-name">草本汤<span class="location">三湘商业广场</span></div>
+    <div class="dishes">
+      <span class="dish-high">牛肋条汤(4)</span> /
+      <span class="dish-low">红烧肉套餐(1)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-05-23 · 环境3星性价比3星总体3星</div>
+    <div class="note">备注：红烧肉套餐又贵又少又不好吃</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">沈阳铁板鸡架<span class="location">三湘商业广场</span></div>
+    <div class="dishes"><span class="dish-high">糖醋口味(5)</span></div>
+    <div class="meta">去过1次 · 最后2026-05-23</div>
+    <div class="note">15块香香脆脆</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">大油边<span class="location">三湘商业广场</span></div>
+    <div class="dishes"><span class="dish-high">串(4)</span></div>
+    <div class="meta">去过1次 · 最后2026-05-23</div>
+    <div class="note">20一串脆香，汁水略欠</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">霸王茶姬<span class="location">三湘商业广场</span></div>
+    <div class="dishes">
+      <span class="dish-high">橙柚康普少糖标准冰(4)</span> /
+      <span class="dish-low">菠萝马黛少糖标准冰(2)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-05-23 · 环境3星性价比3星</div>
+    <div class="note">橙柚康普前面几口很不错越喝越一般；菠萝马黛香精味极重</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">柿子树下<span class="location">岑卜村</span></div>
+    <div class="dishes">
+      <span class="dish-high">荠菜馄饨(4)</span> /
+      <span class="dish-mid">炸猪排(3)</span> /
+      <span class="dish-low">招牌笋干面(2)</span> /
+      <span class="dish-low">炸肉片(2)</span>
+    </div>
+    <div class="meta">去过2次 · 最后2026-05-23</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">紫怡饭店<span class="location">岑卜村</span></div>
+    <div class="dishes">
+      <span class="dish-high">猪肝(4)</span> /
+      <span class="dish-low">豆面(2)</span> /
+      <span class="dish-low">红烧老鹅煲(2)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-04-19 · 已同步大众点评</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">OT另茶</div>
+    <div class="dishes"><span class="dish-mid">生椰抹茶芒芒(3)</span></div>
+    <div class="meta">去过1次 · 最后2026-05-23</div>
+  </div>
+
+  <div class="card">
+    <div class="shop-name">波罗觅食<span class="location">岑卜村</span></div>
+    <div class="dishes">Omakase人均150</div>
+    <div class="meta">去过1次 · 最后2026-02-13</div>
+  </div>
+</div>
+
+<!-- C级 -->
+<div class="group group-c">
+  <div class="group-title">综合2星 · C级</div>
+
+  <div class="card">
+    <div class="shop-name">溶月里·冬日花园餐厅<span class="location">岑卜村</span></div>
+    <div class="dishes">
+      <span class="dish-mid">炸猪肉丸(2)</span> /
+      <span class="dish-low">盐焗鸡(1)</span> /
+      <span class="dish-low">米饭(1)</span>
+    </div>
+    <div class="meta">去过1次 · 最后2026-05-05 · 环境好但性价比差</div>
+    <div class="note">待打卡：煲仔饭</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 待打卡 -->
+<div class="待打卡">
+  <div class="待打卡-title">待打卡</div>
+  <div class="待打卡-item">文记猪杂粥（青浦新城）— 猪杂粥</div>
+  <div class="待打卡-item">潮汕小馆（青立方附近）— 煲仔饭</div>
+</div>
+
+<div class="legend">
+  绿=高分 / 灰=中等 / 红=踩雷 · 数据来源：restaurant_blacklist.json
+</div>
+
+</body>
+</html>
